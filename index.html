@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Foodie pet   </title>
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Open+Sans:wght@300;600&family=Poppins:wght@100;300&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="heder">
+        <h1 class="para" >FIRST BITE <i class="fa-solid fa-paw"></i></i></h1>
+ 
+</div>
+<div class="imgpet">
+<img id="img1" src="https://petnutritionalliance.org/img/sixdogs1.png"></div>
+	<div class="container" >
+ 
+
+<button type="button" onclick="showBtn()" id="btnID"class="btn" >
+    Click Here To Choose <i class="fa fa-caret-down" aria-hidden="true"></i>
+</button><br><br>
+	
+
+	<button id="btnID1" class="link">
+		Info about Pet Food
+	</button>
+
+	<button id="btnID2" onclick="showBtn1()" class="link">
+		Enter the Pet Details Here
+	</button>
+
+	<div id="getDetails">
+		
+		<label style="font-weight:bold;">Weight</label>
+		<input type="text" id="Weight" onchange="rercalc();"><br><br>
+	
+		<label style="font-weight:bold;">Choose the Pet Stage</label>
+
+	<select id="dogcat" onchange="dercalc();totalkcalo();">
+
+			<option value="0" selected> </option>
+			<option value="3" >Puppy 0-4 months </option>
+			<option value="2.5">Puppy 4-9 months</option>
+			<option value="2">Puppy 10-12 months</option>
+			<option value="1.6">Adult dogs (1-6 years old)</option>
+			<option value="1.4">Adult dogs (1 to 6 years old) with obesity tendency</option>
+			<option value="1.4">Senior dogs (7 years old or older)</option>
+			<option value="1.4">A senior dog with a tendency to obese (7 years old or older)</option>
+			<option value="3">Kitten 0-4 months</option>
+			<option value="2.5">Kitten 4-6 months</option>
+			<option value="2">Kitten 7-12 months</option>
+			<option value="1.2">Adult cat (1-6 years old)</option>
+			<option value="1">Adult cats (1 to 6 years old) with obesity tendency</option>
+			<option value="1.1">Senior cats (7 years old or older)</option>
+			<option value="1">A senior cat with a tendency to obese (7 years old or older)</option>
+	
+		</select><br><br>
+
+
+	
+	<label style="font-weight:bold;">RER value</label>
+		<input type="text" id="rer1"><br><br>
+	<label style="font-weight:bold;">DER value</label>
+		<input type="text" id="der1"><br><br>
+	<label style="font-weight:bold;">Total Kcal</label>
+		<input type="text" id="totalkcal"><br><br>
+	
+	<input type="submit" onclick="submitcalc();">
+
+</div>
+</div>
+<div class="foot">
+	<div >
+	<img style="height:100px;width:25%" src="https://braze.imgix.net/production/logos/Verticurl_Logo_FA_RGB_Hirez-01.png?auto=compress%2Cformat&fit=clip&q=90&w=1000&s=d00a98ed9ffd7d304425af899e3fcb8d">
+	<p style="display:inlie;color:beige;padding-left:50px;">© 2022 Verticurl |<i class="fa-brands fa-github" style="padding-left:10px;"></i>	</p>
+</div>
+</div>
+</body>
+</html>
